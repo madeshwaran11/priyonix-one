@@ -1,0 +1,15 @@
+# Send only build inputs; never transmit host dependencies, output or environment files.
+**
+!frontend/
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/index.html
+!frontend/vite.config.js
+!frontend/src/
+!frontend/src/**
+!frontend/public/
+!frontend/public/**
+!scripts/
+!scripts/platform-frontend.Dockerfile
+!scripts/platform-frontend.Dockerfile.dockerignore
+!scripts/platform-nginx.conf

@@ -1,0 +1,843 @@
+{
+  "passed": 169,
+  "checks": [
+    {
+      "check": "POST /api/auth/login",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/projects",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/departments",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/departments/91e34a92-01fe-407d-ba86-9978debf7485",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/departments?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/contacts",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/contacts/5918ccf8-bb99-46ba-a64f-211258030e2b",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/contacts?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/clients",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/opportunities",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/opportunities/8bf36d89-207d-4b39-8838-840702f66cbe",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/opportunities/8bf36d89-207d-4b39-8838-840702f66cbe/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/opportunities/8bf36d89-207d-4b39-8838-840702f66cbe/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/opportunities/8bf36d89-207d-4b39-8838-840702f66cbe/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/opportunities?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/clients",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/contacts",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/quotations",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/quotations/c6a59dd7-607e-49bf-afad-cdcace1d48d2",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/quotations/c6a59dd7-607e-49bf-afad-cdcace1d48d2/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/quotations/c6a59dd7-607e-49bf-afad-cdcace1d48d2/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "quotations calculated subtotal",
+      "passed": true
+    },
+    {
+      "check": "quotations calculated tax",
+      "passed": true
+    },
+    {
+      "check": "quotations calculated total",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/quotations?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/clients",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/opportunities",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/timesheets",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/timesheets/331a4f8f-ec91-4c22-be51-ca0d984a56f0",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/timesheets/331a4f8f-ec91-4c22-be51-ca0d984a56f0/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/timesheets/331a4f8f-ec91-4c22-be51-ca0d984a56f0/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/timesheets?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/projects",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/attendance",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/attendance/c1d63759-52aa-4273-9e65-acdaf3530a93",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/attendance/c1d63759-52aa-4273-9e65-acdaf3530a93/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/attendance?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/leave",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave/83f320bf-5ff1-41d3-a610-2f4de9e1f5c1",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/leave/83f320bf-5ff1-41d3-a610-2f4de9e1f5c1/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/leave/83f320bf-5ff1-41d3-a610-2f4de9e1f5c1/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "leave calculated days",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/vendors",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/vendors/8c4f615f-4fc7-4932-927d-784429ccef8c",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/vendors?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/purchase-requests",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/purchase-requests/7e147690-9245-468c-b367-b1ba305642c8",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/purchase-requests/7e147690-9245-468c-b367-b1ba305642c8/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/purchase-requests/7e147690-9245-468c-b367-b1ba305642c8/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/purchase-requests?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/purchase-orders",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/purchase-orders/53921c2a-0205-4b25-86e2-37c5bd990ab4",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/purchase-orders/53921c2a-0205-4b25-86e2-37c5bd990ab4/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "purchase-orders calculated total",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/purchase-orders?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/purchase-requests",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/vendors",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/goods-receipts",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/goods-receipts/d425a219-bebb-49f2-8e40-3fe5ed7b44ba",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/goods-receipts/d425a219-bebb-49f2-8e40-3fe5ed7b44ba/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/goods-receipts?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/purchase-orders",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/assets",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/assets/ff5a7f39-c245-4191-8012-509dfbc02676",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/assets?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/maintenance",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/maintenance/44a3a36f-30b0-433b-8f84-09451d4b951a",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/maintenance/44a3a36f-30b0-433b-8f84-09451d4b951a/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/maintenance/44a3a36f-30b0-433b-8f84-09451d4b951a/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/maintenance?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/assets",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/vendors",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/courses",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/courses/92067029-bbd0-4df1-ba86-9fac3592a802",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/courses?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/batches",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/batches/68f857e2-b03f-4371-b58a-5741683d6540",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/batches/68f857e2-b03f-4371-b58a-5741683d6540/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/batches?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/courses",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/employees",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/students",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/students/faa77f71-b861-4163-b95d-e5a9c9d60d24",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/students?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/batches",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/training-attendance",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/training-attendance/f0a335ce-5dc0-4b55-8e7b-afed90a3e4a5",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/training-attendance/f0a335ce-5dc0-4b55-8e7b-afed90a3e4a5/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/training-attendance?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/students",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/batches",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/assessments",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/assessments/f1a2a80d-41d8-41c3-bf23-053d1c6b5a1f",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/assessments/f1a2a80d-41d8-41c3-bf23-053d1c6b5a1f/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "assessments calculated percentage",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/assessments?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/students",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/batches",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/placements",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/placements/79ac8ef4-eb29-4a97-9ebd-dc58aa64023a",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/placements/79ac8ef4-eb29-4a97-9ebd-dc58aa64023a/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/placements/79ac8ef4-eb29-4a97-9ebd-dc58aa64023a/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/placements/79ac8ef4-eb29-4a97-9ebd-dc58aa64023a/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/placements?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/students",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/budgets",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/budgets/ef51a60b-0c1e-46cf-9b08-faa930cd96f5",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/budgets/ef51a60b-0c1e-46cf-9b08-faa930cd96f5/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/budgets/ef51a60b-0c1e-46cf-9b08-faa930cd96f5/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/budgets?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/schema",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/lookups/departments",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/invoices",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "POST /api/payments",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "POST /api/payments",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/invoices/6ad9ed79c1436b9d4ee23763?cascade=true",
+      "status": 409,
+      "passed": true
+    },
+    {
+      "check": "POST /api/expenses",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "GET /api/expenses/6ad9ed79c1436b9d4ee23765",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/expenses/6ad9ed79c1436b9d4ee23765/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/expenses/6ad9ed79c1436b9d4ee23765/status",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "check": "GET /api/finance/summary",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/finance/export",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/users",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "check": "POST /api/auth/login",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/users",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/audit",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/finance/summary",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/employees",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/budgets",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/students",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "GET /api/employee/overview",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/users",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/vendors/8c4f615f-4fc7-4932-927d-784429ccef8c",
+      "status": 409,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/vendors",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/assessments",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/clients/6ad9ed28c1436b9d4ee23761?cascade=true",
+      "status": 409,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/status",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/audit?page=1&size=10",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/notifications",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/search?q=Synthetic",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/users",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "check": "User API never exposes password",
+      "passed": true
+    }
+  ]
+}

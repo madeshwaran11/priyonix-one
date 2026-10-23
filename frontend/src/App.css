@@ -1,0 +1,23 @@
+.app-loading {
+  display: flex; min-height: 100dvh; flex-direction: column; align-items: center;
+  justify-content: center; gap: 22px; background: var(--workspace);
+  color: var(--text-secondary); font-size: 15px;
+}
+.app-loading::before {
+  content: ""; width: 92px; height: 92px; border: 1px solid var(--border);
+  border-radius: 22px; box-shadow: var(--shadow-md);
+  background: #fff url("/brand/priyonix-mark.jpg") center / 78px no-repeat;
+}
+.app-loading:has(.brand-loader)::before { display: none; }
+.auth-recovery { display: grid; place-items: center; min-height: 100dvh; padding: 24px; background: var(--workspace); }
+.auth-recovery-card { display: flex; flex-direction: column; align-items: center; gap: 20px; width: min(480px, 100%); padding: 40px 32px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow-md); text-align: center; }
+.auth-recovery-mark { width: 72px; height: 72px; object-fit: contain; }
+.auth-recovery-card h1 { font-size: 28px; line-height: 1.25; letter-spacing: -.7px; }
+.auth-recovery-card p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; }
+.auth-recovery-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+@media (max-width: 480px) {
+  .auth-recovery-card { padding: 32px 24px; }
+  .auth-recovery-actions { width: 100%; }
+  .auth-recovery-actions > * { width: 100%; }
+}
+

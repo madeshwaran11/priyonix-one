@@ -1,0 +1,134 @@
+{
+  "status": "RESTORE_VERIFIED",
+  "sourceDatabase": "priyonix_assignment_20261022",
+  "destinationDatabase": "priyonix_restore_20261022_final",
+  "collections": [
+    {
+      "collection": "audit_events",
+      "count": 83,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "business_guards",
+      "count": 5,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "clients",
+      "count": 2,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "employees",
+      "count": 3,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "expenses",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "fs.chunks",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "fs.files",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "invoices",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "leads",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "payments",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "platform_attachments",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "platform_locks",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "platform_notifications",
+      "count": 98,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "projects",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "sequences",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "tasks",
+      "count": 1,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "users",
+      "count": 4,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    },
+    {
+      "collection": "workspace_records",
+      "count": 25,
+      "sha256Verified": true,
+      "indexesVerified": true,
+      "collectionOptionsVerified": true
+    }
+  ],
+  "documents": 231
+}

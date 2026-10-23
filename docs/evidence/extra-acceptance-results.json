@@ -1,0 +1,753 @@
+{
+  "run": "20261022164215-f622fa",
+  "passed": 91,
+  "failed": 0,
+  "elapsedSeconds": 9.38,
+  "checks": [
+    {
+      "check": "POST /api/auth/login",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/employees",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/users",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/auth/login",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/employees",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/users",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/auth/login",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/attendance",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/attendance/3094f63b-7e60-42c9-a5e1-7d157f13c8b9",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Employee can update own unverified attendance",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/attendance/3094f63b-7e60-42c9-a5e1-7d157f13c8b9",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/attendance/3094f63b-7e60-42c9-a5e1-7d157f13c8b9/status",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/attendance/3094f63b-7e60-42c9-a5e1-7d157f13c8b9/status",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/attendance/3094f63b-7e60-42c9-a5e1-7d157f13c8b9",
+      "status": 409,
+      "expected": [
+        409
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/attendance",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/leave",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/leave",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave?size=100",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave?size=100",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Own leave appears in employee list",
+      "passed": true
+    },
+    {
+      "check": "Employee A list excludes employee B private leave",
+      "passed": true
+    },
+    {
+      "check": "Employee B list excludes employee A private leave",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 201,
+      "expected": [
+        201
+      ],
+      "passed": true
+    },
+    {
+      "check": "Attachment metadata records byte size",
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments/6dbd3142-7adc-4515-a451-635972691d40/download",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Downloaded attachment is byte-for-byte identical",
+      "passed": true
+    },
+    {
+      "check": "Attachment download prevents MIME sniffing",
+      "passed": true
+    },
+    {
+      "check": "Attachment download has sandbox policy",
+      "passed": true
+    },
+    {
+      "check": "Attachment download prevents private cache storage",
+      "passed": true
+    },
+    {
+      "check": "Attachment downloads as a file",
+      "passed": true
+    },
+    {
+      "check": "Attachment content type is detected server-side",
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments?module=leave&recordId=65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Attachment list includes the uploaded file",
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments/6dbd3142-7adc-4515-a451-635972691d40/download",
+      "status": 401,
+      "expected": [
+        401
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments/6dbd3142-7adc-4515-a451-635972691d40/download",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments?module=leave&recordId=65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/platform/attachments/6dbd3142-7adc-4515-a451-635972691d40",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9?version=0",
+      "status": 409,
+      "expected": [
+        409
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 413,
+      "expected": [
+        400,
+        413
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 201,
+      "expected": [
+        201
+      ],
+      "passed": true
+    },
+    {
+      "check": "Upload strips path components from the filename",
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/platform/attachments/625ad0ee-a01f-47ab-a9bf-131b856f8a85",
+      "status": 204,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments/625ad0ee-a01f-47ab-a9bf-131b856f8a85/download",
+      "status": 404,
+      "expected": [
+        404
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/platform/attachments",
+      "status": 201,
+      "expected": [
+        201
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/attachments/3250a40c-f74d-44ca-b3ea-27bc2d7f6dce/download",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PNG upload and download round-trip",
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/platform/attachments/3250a40c-f74d-44ca-b3ea-27bc2d7f6dce",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/platform/attachments/3250a40c-f74d-44ca-b3ea-27bc2d7f6dce",
+      "status": 204,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9/status",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9/status",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9/status",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/leave/65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "status": 409,
+      "expected": [
+        409
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/timesheets",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/workspace/timesheets/de4d6210-0bff-4953-827f-40e3efe36d63",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Employee can revise own draft timesheet",
+      "passed": true
+    },
+    {
+      "check": "GET /api/workspace/timesheets/de4d6210-0bff-4953-827f-40e3efe36d63",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/timesheets/de4d6210-0bff-4953-827f-40e3efe36d63/status",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/timesheets/de4d6210-0bff-4953-827f-40e3efe36d63/status",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/workspace/timesheets/de4d6210-0bff-4953-827f-40e3efe36d63/status",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/workspace/timesheets",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/search?q=Extra%20private%20time%2020261022164215-f622fa",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "GET /api/platform/search?q=Extra%20private%20time%2020261022164215-f622fa",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Global search finds employee own private timesheet",
+      "passed": true
+    },
+    {
+      "check": "Global search excludes another employee private timesheet",
+      "passed": true
+    },
+    {
+      "check": "POST /api/leads",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/leads/6ad9ef96c1436b9d4ee23771/convert",
+      "status": 400,
+      "expected": [
+        400
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/leads/6ad9ef96c1436b9d4ee23771",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/leads/6ad9ef96c1436b9d4ee23771/convert",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Won lead converts to one persistent client",
+      "passed": true
+    },
+    {
+      "check": "GET /api/clients/6ad9ef97c1436b9d4ee23772",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/leads/6ad9ef96c1436b9d4ee23771/convert",
+      "status": 409,
+      "expected": [
+        409
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/tasks",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/tasks",
+      "status": 409,
+      "expected": [
+        409
+      ],
+      "passed": true
+    },
+    {
+      "check": "POST /api/tasks/6ad9ef97c1436b9d4ee23773/subtasks",
+      "status": 201,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PUT /api/tasks/6ad9ef97c1436b9d4ee23773/subtasks/7da4ba8e-e478-40c5-94ca-abd00fcaff1e",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Task subtask completion persists",
+      "passed": true
+    },
+    {
+      "check": "PUT /api/tasks/6ad9ef97c1436b9d4ee23773",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "Task completion enforces 100 percent progress",
+      "passed": true
+    },
+    {
+      "check": "GET /api/projects/6ad9ed73c1436b9d4ee23762/summary",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "DELETE /api/tasks/6ad9ef97c1436b9d4ee23773",
+      "status": 403,
+      "expected": [
+        403
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/platform/users/6ad9ef90c1436b9d4ee23768",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    },
+    {
+      "check": "PATCH /api/platform/users/6ad9ef91c1436b9d4ee2376a",
+      "status": 200,
+      "expected": [
+        200,
+        201,
+        204
+      ],
+      "passed": true
+    }
+  ],
+  "fixtures": {
+    "employeeA": "6ad9ef90c1436b9d4ee23767",
+    "employeeB": "6ad9ef91c1436b9d4ee23769",
+    "project": "6ad9ed73c1436b9d4ee23762",
+    "leaveA": "65b0106a-a756-44dc-a66a-18d5601df9c9",
+    "leaveB": "15f188f1-d3b0-4836-a33a-184ab9514f44",
+    "retainedAttachment": {
+      "id": "6dbd3142-7adc-4515-a451-635972691d40",
+      "module": "leave",
+      "recordId": "65b0106a-a756-44dc-a66a-18d5601df9c9",
+      "size": 80,
+      "sha256": "a5c9b3ebe31202a5ae01b107e6e34c19c66c011849df70d4e5bffbd778ddbf31"
+    },
+    "lead": "6ad9ef96c1436b9d4ee23771",
+    "convertedClient": "6ad9ef97c1436b9d4ee23772",
+    "task": "6ad9ef97c1436b9d4ee23773",
+    "timesheet": "de4d6210-0bff-4953-827f-40e3efe36d63"
+  },
+  "temporaryAccountsDisabled": 2,
+  "mutationsFinished": true
+}

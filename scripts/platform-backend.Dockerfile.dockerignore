@@ -1,0 +1,9 @@
+# Only application source and Maven metadata belong in the backend build context.
+**
+!backend/
+!backend/pom.xml
+!backend/src/
+!backend/src/**
+!scripts/
+!scripts/platform-backend.Dockerfile
+!scripts/platform-backend.Dockerfile.dockerignore

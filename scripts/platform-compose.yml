@@ -1,0 +1,42 @@
+name: priyonix-one-local
+services:
+  mongo:
+    image: mongo:8
+    command: ["mongod", "--replSet", "priyonix-local", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27029:27017"
+    volumes:
+      - platform-mongo-data:/data/db
+    healthcheck:
+      test: ["CMD-SHELL", "mongosh --quiet --eval 'try { if (db.hello().isWritablePrimary) quit(0); rs.status(); quit(1); } catch (e) { rs.initiate({_id:\"priyonix-local\",members:[{_id:0,host:\"mongo:27017\"}]}); quit(1); }'"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  backend:
+    build:
+      context: ..
+      dockerfile: scripts/platform-backend.Dockerfile
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/priyonix?replicaSet=priyonix-local
+      MONGODB_DATABASE: priyonix
+      JWT_SECRET: ${JWT_SECRET:?Set a randomly generated JWT_SECRET}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Set the initial administrator email}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set a strong initial administrator password}
+      CORS_ALLOWED_ORIGINS: http://localhost:5173
+      PASSWORD_RESET_DEV_MODE: "false"
+      AUTH_REFRESH_COOKIE_SECURE: "false"
+    depends_on:
+      mongo:
+        condition: service_healthy
+  frontend:
+    build:
+      context: ..
+      dockerfile: scripts/platform-frontend.Dockerfile
+      args:
+        VITE_API_BASE: http://localhost:5173
+    ports:
+      - "127.0.0.1:5173:8080"
+    depends_on:
+      - backend
+volumes:
+  platform-mongo-data:

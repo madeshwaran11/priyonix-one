@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 26,
+  "afterBackendRestart": true,
+  "builtFrontendServed": true,
+  "all20ModulesPersisted": true,
+  "browserCreatedContactPersisted": true,
+  "paymentPersisted": true,
+  "attachmentHashMatched": true
+}
