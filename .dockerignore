@@ -1,0 +1,9 @@
+.git
+.github
+docs
+release
+frontend/node_modules
+frontend/dist
+backend/target
+backend/.env
+**/*.log
